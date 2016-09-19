@@ -38,7 +38,7 @@ todaydate = datetime.today().day
 name= input("Hello, what is your name? ")
 birthmonth=input("Hi "+name+", what was the name of the month you were born in? ")
 birthyear= input("And what year were you born in, "+name+"? ")
-birthyear= input("And the day? ")
+birthday= input("And the day? ")
 if birthmonth in ["January", "Febuary", "December"]:
     season="winter"
 else:
@@ -59,9 +59,51 @@ else:
         else:
             if int(birthyear)>= 2000:
                 era="two thousands"
-if birthday==31 and birthmonth=="October":
-    halloween=yes
-if birthmonth=="September":
-    birthmonth=9
-if birthmonth==
+if int(birthday)==31 and birthmonth=="October":
+    halloween="yes"
+else:
+    halloween="no"
+if birthmonth=="January":
+    monthnum=1
+else:
+    if birthmonth=="Febuary":
+        monthnum=2
+    else:
+        if birthmonth=="March":
+            monthnum=3
+        else:
+            if birthmonth=="April":
+                monthnum=4
+            else:
+                if birthmonth=="May":
+                    monthnum=5
+                else:
+                    if birthmonth=="June":
+                        monthnum=6
+                    else:
+                        if birthmonth=="July":
+                            monthnum=7
+                        else:
+                            if birthmonth=="August":
+                                monthnum=8
+                            else:
+                                if birthmonth=="September":
+                                    monthnum=9
+                                else:
+                                    if birthmonth=="October":
+                                        monthnum=10
+                                    else:
+                                        if birthmonth=="November":
+                                            monthnum=11
+                                        else:
+                                            if birthmonth=="December":
+                                                monthnum=12
+if int(monthnum)== int(todaymonth) and int(birthday)==int(todaydate):
+    print("Happy Birthday!")
+else:
+    if halloween=="yes":
+        print("You were born on Halloween!")
+    else:
+        print(name+", you are a "+season+" baby of the "+era+".")
+
             
