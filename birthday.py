@@ -31,3 +31,37 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
+from datetime import datetime
+from calendar import month_name
+todaymonth = datetime.today().month
+todaydate = datetime.today().day
+name= input("Hello, what is your name? ")
+birthmonth=input("Hi "+name+", what was the name of the month you were born in? ")
+birthyear= input("And what year were you born in, "+name+"? ")
+birthyear= input("And the day? ")
+if birthmonth in ["January", "Febuary", "December"]:
+    season="winter"
+else:
+    if birthmonth in ["March", "April", "May"]:
+        season="spring"
+    else:
+        if birthmonth in ["June", "July", "August"]:
+            season="summer"
+        else: season="fall"
+if int(birthyear)<1980:
+    era="stone age"
+else:
+    if int(birthyear) in [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989]:
+        era="eighties"
+    else:
+        if int(birthyear) in [1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]:
+            era="nineties"
+        else:
+            if int(birthyear)>= 2000:
+                era="two thousands"
+if birthday==31 and birthmonth=="October":
+    halloween=yes
+if birthmonth=="September":
+    birthmonth=9
+if birthmonth==
+            
