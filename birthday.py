@@ -49,7 +49,7 @@ else:
             season="summer"
         else: season="fall"
 if int(birthyear)<1980:
-    era="stone age"
+    era="Stone Age"
 else:
     if int(birthyear) in [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989]:
         era="eighties"
