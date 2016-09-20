@@ -99,7 +99,7 @@ else:
                                             if birthmonth=="December":
                                                 monthnum=12
 if int(monthnum)== int(todaymonth) and int(birthday)==int(todaydate):
-    print("Happy Birthday!")
+    print("Happy birthday!")
 else:
     if halloween=="yes":
         print("You were born on Halloween!")
